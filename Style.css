@@ -1,0 +1,15 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 5px solid salmon  ;
+    width: 500px;
+    height: 500px;
+}
+.grid{
+    border: 1px solid rgb(0, 0, 0)  ;
+}
