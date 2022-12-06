@@ -1,6 +1,7 @@
 
 let div = document.querySelector('.container');
 let slider = document.querySelector('.slider');
+let grids;
 removeElements();
 createBoard();
 slider.onchange =function(){
@@ -13,8 +14,15 @@ function createBoard(){
         let squares= document.createElement('div');
         squares.classList.add(`grid`);
         div.appendChild(squares);
-        
     }
+    grids = document.querySelectorAll('.grid')
+    console.log(grids);
+    grids.forEach(grid =>{
+        grid.addEventListener('mouseover',()=>{
+            grid.style.cssText='background-color:black;';
+        });
+    })
+
 }
 function removeElements() {
     const list = document.querySelector(".container");
